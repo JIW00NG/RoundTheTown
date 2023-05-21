@@ -1,0 +1,6 @@
+framework module Pods_RoundTheTownTests {
+  umbrella header "Pods-RoundTheTownTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
