@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A1987B0155A73D96EEF70F7 /* Pods_RoundTheTown_RoundTheTownUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0685416345AABAF16BC0ABEE /* Pods_RoundTheTown_RoundTheTownUITests.framework */; };
 		7F20107AD4B8AA027C1C2E63 /* Pods_RoundTheTownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772934A48D0912C0C329B497 /* Pods_RoundTheTownTests.framework */; };
+		BF4A28CD2A412F3B00CA10FA /* DefaultMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4A28CC2A412F3B00CA10FA /* DefaultMapViewController.swift */; };
+		BF916F732A4133520028D63F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF916F722A4133520028D63F /* Keys.swift */; };
 		CE5A432F2A1A1B7B00A275EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A432E2A1A1B7B00A275EE /* AppDelegate.swift */; };
 		CE5A43312A1A1B7B00A275EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A43302A1A1B7B00A275EE /* SceneDelegate.swift */; };
 		CE5A43332A1A1B7B00A275EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A43322A1A1B7B00A275EE /* ViewController.swift */; };
@@ -48,6 +50,8 @@
 		772934A48D0912C0C329B497 /* Pods_RoundTheTownTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoundTheTownTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A670CEBD5DE6B4483BBEAB3 /* Pods_RoundTheTown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoundTheTown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B267B62C9B8470B725688393 /* Pods-RoundTheTown-RoundTheTownUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundTheTown-RoundTheTownUITests.release.xcconfig"; path = "Target Support Files/Pods-RoundTheTown-RoundTheTownUITests/Pods-RoundTheTown-RoundTheTownUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BF4A28CC2A412F3B00CA10FA /* DefaultMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMapViewController.swift; sourceTree = "<group>"; };
+		BF916F722A4133520028D63F /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		CE59050D3158AF90BF4333CA /* Pods-RoundTheTown-RoundTheTownUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundTheTown-RoundTheTownUITests.debug.xcconfig"; path = "Target Support Files/Pods-RoundTheTown-RoundTheTownUITests/Pods-RoundTheTown-RoundTheTownUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE5A432B2A1A1B7B00A275EE /* RoundTheTown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundTheTown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5A432E2A1A1B7B00A275EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,14 @@
 				27D8AF121D49B247687E6182 /* Pods-RoundTheTownTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF916F712A4133420028D63F /* Literal */ = {
+			isa = PBXGroup;
+			children = (
+				BF916F722A4133520028D63F /* Keys.swift */,
+			);
+			path = Literal;
 			sourceTree = "<group>";
 		};
 		CE5A43222A1A1B7B00A275EE = {
@@ -169,8 +181,8 @@
 		CE5A43622A1A1D0800A275EE /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				BF916F712A4133420028D63F /* Literal */,
 				CE5A436B2A1A1DB100A275EE /* Service */,
-				CE5A43682A1A1D3200A275EE /* Literal */,
 				CE5A43672A1A1D3000A275EE /* Main */,
 			);
 			path = Global;
@@ -180,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5A43322A1A1B7B00A275EE /* ViewController.swift */,
+				BF4A28CC2A412F3B00CA10FA /* DefaultMapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,13 +227,6 @@
 				CE5A43692A1A1D4F00A275EE /* Storyboard */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		CE5A43682A1A1D3200A275EE /* Literal */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Literal;
 			sourceTree = "<group>";
 		};
 		CE5A43692A1A1D4F00A275EE /* Storyboard */ = {
@@ -270,6 +276,7 @@
 				CE5A43282A1A1B7B00A275EE /* Frameworks */,
 				CE5A43292A1A1B7B00A275EE /* Resources */,
 				4C130A7C7984D229D192D034 /* [CP] Embed Pods Frameworks */,
+				ED1E572A0FA6934751438CA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +315,7 @@
 				CE5A434B2A1A1B7C00A275EE /* Frameworks */,
 				CE5A434C2A1A1B7C00A275EE /* Resources */,
 				3616875E328922C95F85361A /* [CP] Embed Pods Frameworks */,
+				FEDC1469D9B3616BDDF48D94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -490,6 +498,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ED1E572A0FA6934751438CA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundTheTown/Pods-RoundTheTown-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundTheTown/Pods-RoundTheTown-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoundTheTown/Pods-RoundTheTown-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEDC1469D9B3616BDDF48D94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundTheTown-RoundTheTownUITests/Pods-RoundTheTown-RoundTheTownUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RoundTheTown-RoundTheTownUITests/Pods-RoundTheTown-RoundTheTownUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RoundTheTown-RoundTheTownUITests/Pods-RoundTheTown-RoundTheTownUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -498,6 +540,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5A43332A1A1B7B00A275EE /* ViewController.swift in Sources */,
+				BF916F732A4133520028D63F /* Keys.swift in Sources */,
+				BF4A28CD2A412F3B00CA10FA /* DefaultMapViewController.swift in Sources */,
 				CE5A432F2A1A1B7B00A275EE /* AppDelegate.swift in Sources */,
 				CE5A43392A1A1B7B00A275EE /* RoundTheTown.xcdatamodeld in Sources */,
 				CE5A43312A1A1B7B00A275EE /* SceneDelegate.swift in Sources */,
@@ -679,6 +723,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 744MUUC77P;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RoundTheTown/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -692,6 +737,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artf3.RoundTheTown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -709,6 +755,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 744MUUC77P;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RoundTheTown/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
