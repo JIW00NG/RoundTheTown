@@ -11,6 +11,7 @@
 		7F20107AD4B8AA027C1C2E63 /* Pods_RoundTheTownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772934A48D0912C0C329B497 /* Pods_RoundTheTownTests.framework */; };
 		BF4A28CD2A412F3B00CA10FA /* DefaultMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4A28CC2A412F3B00CA10FA /* DefaultMapViewController.swift */; };
 		BF916F732A4133520028D63F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF916F722A4133520028D63F /* Keys.swift */; };
+		BF916FEE2A4420D50028D63F /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF916FED2A4420D50028D63F /* View+Extension.swift */; };
 		CE5A432F2A1A1B7B00A275EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A432E2A1A1B7B00A275EE /* AppDelegate.swift */; };
 		CE5A43312A1A1B7B00A275EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A43302A1A1B7B00A275EE /* SceneDelegate.swift */; };
 		CE5A43332A1A1B7B00A275EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A43322A1A1B7B00A275EE /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		B267B62C9B8470B725688393 /* Pods-RoundTheTown-RoundTheTownUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundTheTown-RoundTheTownUITests.release.xcconfig"; path = "Target Support Files/Pods-RoundTheTown-RoundTheTownUITests/Pods-RoundTheTown-RoundTheTownUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BF4A28CC2A412F3B00CA10FA /* DefaultMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMapViewController.swift; sourceTree = "<group>"; };
 		BF916F722A4133520028D63F /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		BF916FED2A4420D50028D63F /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		CE59050D3158AF90BF4333CA /* Pods-RoundTheTown-RoundTheTownUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoundTheTown-RoundTheTownUITests.debug.xcconfig"; path = "Target Support Files/Pods-RoundTheTown-RoundTheTownUITests/Pods-RoundTheTown-RoundTheTownUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE5A432B2A1A1B7B00A275EE /* RoundTheTown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundTheTown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5A432E2A1A1B7B00A275EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			path = Literal;
 			sourceTree = "<group>";
 		};
+		BF916FEC2A4420C90028D63F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF916FED2A4420D50028D63F /* View+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		CE5A43222A1A1B7B00A275EE = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +191,7 @@
 		CE5A43622A1A1D0800A275EE /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				BF916FEC2A4420C90028D63F /* Extension */,
 				BF916F712A4133420028D63F /* Literal */,
 				CE5A436B2A1A1DB100A275EE /* Service */,
 				CE5A43672A1A1D3000A275EE /* Main */,
@@ -544,6 +555,7 @@
 				BF4A28CD2A412F3B00CA10FA /* DefaultMapViewController.swift in Sources */,
 				CE5A432F2A1A1B7B00A275EE /* AppDelegate.swift in Sources */,
 				CE5A43392A1A1B7B00A275EE /* RoundTheTown.xcdatamodeld in Sources */,
+				BF916FEE2A4420D50028D63F /* View+Extension.swift in Sources */,
 				CE5A43312A1A1B7B00A275EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
