@@ -9,6 +9,8 @@ target 'RoundTheTown' do
   pod 'RxSwift', '>= 6.0.0'
   pod 'RxCocoa', '>= 6.0.0'
   pod 'Alamofire'  
+  pod 'GoogleMaps', '6.1.0'
+  pod 'Google-Maps-iOS-Utils', '3.4.0'
 
   target 'RoundTheTownTests' do
     inherit! :search_paths
